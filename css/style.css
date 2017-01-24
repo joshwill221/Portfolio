@@ -1,0 +1,29 @@
+header {
+  text-align: center;
+  color: grey;
+}
+
+header a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: grey;
+}
+
+header li {;
+  display: inline;
+  list-style: none;
+  padding: 10px;
+}
+
+header a:hover {
+  color: black;
+}
+
+.current {
+  color: black;
+}
+
+footer {
+  text-align: center;
+  color: grey;
+}
