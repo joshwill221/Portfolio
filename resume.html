@@ -7,7 +7,7 @@
     <meta name="keywords" content="josh williams, joshua williams, joshwill221, joshwill221@gmail.com"
     <meta name="author" content="Josh Williams">
     <title>Josh's Portfolio | Welcome</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Indie+Flower">
     <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -19,28 +19,21 @@
         <div class="container">
             <h1>Josh Williams</h1>
             <p>The Beginning of My Porfolio</p>
+          </div>
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#">Projects</a></li>
+              <li><a class="current" href="resume.html">Resume</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
         </div>
-        <nav>
-          <ul>
-            <li><a class="current" href="index.html">Home</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="resume.html">Resume</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </nav>
       </header>
 
       <!-- <hr> or not? -->
 
-      <div class="body">
-        <h1>Test Header</h1>
-        <p>This font seems ok for small paragraphs.</p>
-        <p>I will add more content real soon.</p>
-        <br />
-
-        <h1>Projects Coming Soon...</h1>
-        <p>Breakout 2D game made in pure JavaScript and in Phaser a JavaScript framework.</p>
-        <p>What was different in each and what I learnt from comparing the two.</p><br />
+      <div id="pdf-viewer">
       </div>
 
       <br />
@@ -48,6 +41,8 @@
       <footer>
         <p>Josh Williams, Copyright &copy; 2017</p>
       </footer>
-    </div><!-- .wrapper -->
+    </div><!-- end wrapper -->
   </body>
+  <script src="./js/pdfobject.js"></script>
+  <script>PDFObject.embed("./pdf/JoshWilliams_Resume_2017.pdf", "#pdf-viewer");</script>
 </html>
